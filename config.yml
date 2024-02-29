@@ -12,32 +12,36 @@ params:
 # hideSocialName: true
 # exitLocation: 'about:blank'
 # hidesource: true
-  greeting: | 
-            |                     ./o.                    
-            |                    ./sssso-                mm-2103@MM-2103-EO
-            |                  `:osssssss+-              ------------------
-            |                `:+sssssssssso/.            OS: EndeavourOS Linux x86_64
-            |              `-/ossssssssssssso/.          Kernel: 6.6.4-arch1-1 
-            |            `-/+sssssssssssssssso+:`         
-            |          `-:/+sssssssssssssssssso+/.       Packages: 1251 (pacman) 
-            |        `.://osssssssssssssssssssso++-      Shell: fish 3.6.2 
-            |        .://+ssssssssssssssssssssssso++:    WM: awesome 
-            |      .:///ossssssssssssssssssssssssso++:   Theme: Arc-Dark [GTK2/3]
-            |    `:////ssssssssssssssssssssssssssso+++.  Icons: kora [GTK2/3] 
-            |  `-////+ssssssssssssssssssssssssssso++++-  Terminal: kitty 
-            |  `..-+oosssssssssssssssssssssssso+++++/`    
-            |    ./++++++++++++++++++++++++++++++/:.     
-            |    `:::::::::::::::::::::::::------``      
-                   
+  greeting: |
+            |          ▗▄▄▄       ▗▄▄▄▄    ▄▄▄▖            mm-2103@nixos 
+            |          ▜███▙       ▜███▙  ▟███▛            ------------- 
+            |           ▜███▙       ▜███▙▟███▛             OS: NixOS 24.05 
+            |            ▜███▙       ▜██████▛               
+            |     ▟█████████████████▙ ▜████▛     ▟▙        
+            |    ▟███████████████████▙ ▜███▙    ▟██▙        
+            |           ▄▄▄▄▖           ▜███▙  ▟███▛       Packages: 1862 (nix-system), 29 (nix 
+            |          ▟███▛             ▜██▛ ▟███▛        Shell: bash 5.2.26 
+            |▟███████████▛                  ▟██████████▙   WM: awesome 
+            |▜██████████▛                  ▟███████████▛   Theme: Arc-Dark [GTK2/3] 
+            |      ▟███▛ ▟▙               ▟███▛            Icons: kora [GTK2/3] 
+            |     ▟███▛ ▟██▙             ▟███▛             Terminal: kitty 
+            |    ▟███▛  ▜███▙           ▝▀▀▀▀              Terminal Font: FiraCode Nerd Font 11 
+            |    ▜██▛    ▜███▙ ▜██████████████████▛         
+            |     ▜▛     ▟████▙ ▜████████████████▛          
+            |           ▟██████▙       ▜███▙                 
+            |          ▟███▛▜███▙       ▜███▙              
+            |         ▟███▛  ▜███▙       ▜███▙
+            |         ▝▀▀▀    ▀▀▀▀▘       ▀▀▀▘                                     
+            |                                                                            
 
             Type help for a list of commands                       
-  whois: 
+  whois:
       name: "Mehsen Menem"
       profession: "Web Developer"
       location: "Tilburg"
       email: "mohsen.menem@protonmail.com"
       description: |
-             Hello, I am a backend web developer who loves working with Linux and have an interest in low level programming. 
+             Hello, I am a backend web developer who loves working with Linux and progamming websites. I am always on the lookout for new technologies that sound interesting to me. I also have an interest in low level programming. 
 
   social:
     ## IF you want to keep them aligned just add spaces
@@ -89,7 +93,12 @@ params:
     - name: PHP
       color: purple
       percentage: 70
-      description: I usually always go with PHP when i need to write a backend to a web app but lately I have been using different languages just to try new things. I still like PHP and since I do a lot of work with Wordpress I still heavily use it, but there is still some stuff that make me struggle a bit with this language.
+      description: I usually always go with PHP when i need to write a backend to a web app but lately I have been using different languages just to try new things. I still like PHP and since I do a lot of work with Wordpress I still heavly use it, but there is still some stuff that make me struggle a bit with this language.
+
+    - name: Laravel
+      color: red
+      percentage: 70
+      description: Laravel is a great PHP framework, the powerfull CLI the hassle free auth system, the great ecosystem and the huge community. Laravel has it all. 
 
     - name: Go
       color: blue
@@ -152,20 +161,14 @@ params:
       color: grey
       link: https://github.com/MM-2103/ https://portfolio.mehsen.website/posts/github/
       description: If you are interested in more stuff that I worked on, then please check my Gihub. I have there different repos that I frequently update 
-
-        #  certifications:
-    - certName: Example Cert
-      company: Example Certifying Company
-      date: Date of Completion
-      #description: Lorem Ipsum
+ 
   
   misc: 
-    #commandName: newcommand
-    title: "How to reach out to me!"
+    title: "How to reach me out!"
     titleColor: teal
     content: |
       Email : mohsen.menem@protonmail.com
       phone : +31 0649220707
 
 
-      *Note* : Please keep in mind that I am always updating this site so a lot of the content here may change from time to time to keep it up to date with my current knowledge/skills/work/etc...          
+      Note : Please keep in mind that I am always updating this site so a lot of the content here may change from time to time to keep it up to date with my current knowledge/skills/work/etc...          

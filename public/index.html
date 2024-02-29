@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w2.org/1999/xhtml">
-<html lang="en">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.116.1">
+	<meta name="generator" content="Hugo 0.123.3">
             <meta charset="utf-8" />
     <title>terminalCV </title>
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
     <meta name="description" content="4s3ti cv terminal format">
     <meta property="og:title" content="terminalCV" />
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="//localhost:1313/" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
-    <link rel="canonical" href="/" />    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="canonical" href="//localhost:1313/" />    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
             
             
                 term.echo ("")
-                term.echo ("Hello, I am a backend web developer who loves working with Linux and have an interest in low level programming. \n")
+                term.echo ("Hello, I am a backend web developer who loves working with Linux and progamming websites. I am always on the lookout for new technologies that sound interesting to me. I also have an interest in low level programming. \n")
             
         
         term.echo ("");
@@ -176,7 +176,18 @@ jQuery(document).ready(function($) {
                         bar_filled + bar_blank + 
                          70  +"%");
                 
-                    term.echo("I usually always go with PHP when i need to write a backend to a web app but lately I have been using different languages just to try new things. I still like PHP and since I do a lot of work with Wordpress I still heavily use it, but there is still some stuff that make me struggle a bit with this language.");
+                    term.echo("I usually always go with PHP when i need to write a backend to a web app but lately I have been using different languages just to try new things. I still like PHP and since I do a lot of work with Wordpress I still heavly use it, but there is still some stuff that make me struggle a bit with this language.");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 70  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;red;]Laravel:]\n" +
+                        bar_filled + bar_blank + 
+                         70  +"%");
+                
+                    term.echo("Laravel is a great PHP framework, the powerfull CLI the hassle free auth system, the great ecosystem and the huge community. Laravel has it all.");
                 
                 term.echo ("")
             
@@ -321,20 +332,13 @@ jQuery(document).ready(function($) {
                 term.echo("-----------------------");
                 term.echo("");
           
-                term.echo("[[b;grey;]]");
-                term.echo("Date of Completion")
-                term.echo("")
-                
-                term.echo("-----------------------");
-                term.echo("");
-          
         
     }
 
     function misc (){
         term.echo ("")
-        term.echo("[[b;teal;]How to reach out to me!]" + "\n")
-        term.echo ("[[;;]Email : mohsen.menem@protonmail.com\nphone : \u002b31 0649220707\n\n\n*Note* : Please keep in mind that I am always updating this site so a lot of the content here may change from time to time to keep it up to date with my current knowledge\/skills\/work\/etc...          \n]")
+        term.echo("[[b;teal;]How to reach me out!]" + "\n")
+        term.echo ("[[;;]Email : mohsen.menem@protonmail.com\nphone : \u002b31 0649220707\n\n\nNote : Please keep in mind that I am always updating this site so a lot of the content here may change from time to time to keep it up to date with my current knowledge\/skills\/work\/etc...          \n]")
         term.echo ("")
     }
 
@@ -463,7 +467,7 @@ jQuery(document).ready(function($) {
         }
     }, {
         prompt: '[[;grey;]guest@terminal][[;grey;]~\u003e]' + " ",
-        greetings: "[[b;white;]|                     .\/o.                    \n|                    .\/sssso-                mm-2103@MM-2103-EO\n|                  \u0060:osssssss\u002b-              ------------------\n|                \u0060:\u002bsssssssssso\/.            OS: EndeavourOS Linux x86_64\n|              \u0060-\/ossssssssssssso\/.          Kernel: 6.6.4-arch1-1 \n|            \u0060-\/\u002bsssssssssssssssso\u002b:\u0060         \n|          \u0060-:\/\u002bsssssssssssssssssso\u002b\/.       Packages: 1251 (pacman) \n|        \u0060.:\/\/osssssssssssssssssssso\u002b\u002b-      Shell: fish 3.6.2 \n|        .:\/\/\u002bssssssssssssssssssssssso\u002b\u002b:    WM: awesome \n|      .:\/\/\/ossssssssssssssssssssssssso\u002b\u002b:   Theme: Arc-Dark [GTK2\/3]\n|    \u0060:\/\/\/\/ssssssssssssssssssssssssssso\u002b\u002b\u002b.  Icons: kora [GTK2\/3] \n|  \u0060-\/\/\/\/\u002bssssssssssssssssssssssssssso\u002b\u002b\u002b\u002b-  Terminal: kitty \n|  \u0060..-\u002boosssssssssssssssssssssssso\u002b\u002b\u002b\u002b\u002b\/\u0060    \n|    .\/\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\/:.     \n|    \u0060:::::::::::::::::::::::::------\u0060\u0060      \n       \n\nType help for a list of commands                       \n]",
+        greetings: "[[b;white;]|          ▗▄▄▄       ▗▄▄▄▄    ▄▄▄▖            mm-2103@nixos \n|          ▜███▙       ▜███▙  ▟███▛            ------------- \n|           ▜███▙       ▜███▙▟███▛             OS: NixOS 24.05 \n|            ▜███▙       ▜██████▛               \n|     ▟█████████████████▙ ▜████▛     ▟▙        \n|    ▟███████████████████▙ ▜███▙    ▟██▙        \n|           ▄▄▄▄▖           ▜███▙  ▟███▛       Packages: 1862 (nix-system), 29 (nix \n|          ▟███▛             ▜██▛ ▟███▛        Shell: bash 5.2.26 \n|▟███████████▛                  ▟██████████▙   WM: awesome \n|▜██████████▛                  ▟███████████▛   Theme: Arc-Dark [GTK2\/3] \n|      ▟███▛ ▟▙               ▟███▛            Icons: kora [GTK2\/3] \n|     ▟███▛ ▟██▙             ▟███▛             Terminal: kitty \n|    ▟███▛  ▜███▙           ▝▀▀▀▀              Terminal Font: FiraCode Nerd Font 11 \n|    ▜██▛    ▜███▙ ▜██████████████████▛         \n|     ▜▛     ▟████▙ ▜████████████████▛          \n|           ▟██████▙       ▜███▙                 \n|          ▟███▛▜███▙       ▜███▙              \n|         ▟███▛  ▜███▙       ▜███▙\n|         ▝▀▀▀    ▀▀▀▀▘       ▀▀▀▘                                     \n|                                                                            \n\nType help for a list of commands                       \n]",
         keydown: function(e, term) {
             if (animation) {
                 if (e.which == 68 && e.ctrlKey) { 
