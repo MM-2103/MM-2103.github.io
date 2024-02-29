@@ -1,0 +1,171 @@
+#BaseURL: "https://mehsen.website"
+#theme: "terminalCV"
+title: "terminalCV"
+
+params:
+  description: "4s3ti cv terminal format"
+  prompt: "guest@terminal"
+# promptColor: grey
+  promptSimbols: "~>"
+# promptSimbolsColor: grey
+  startxLocation: https://portfolio.mehsen.website
+# hideSocialName: true
+# exitLocation: 'about:blank'
+# hidesource: true
+  greeting: | 
+            |                     ./o.                    
+            |                    ./sssso-                mm-2103@MM-2103-EO
+            |                  `:osssssss+-              ------------------
+            |                `:+sssssssssso/.            OS: EndeavourOS Linux x86_64
+            |              `-/ossssssssssssso/.          Kernel: 6.6.4-arch1-1 
+            |            `-/+sssssssssssssssso+:`         
+            |          `-:/+sssssssssssssssssso+/.       Packages: 1251 (pacman) 
+            |        `.://osssssssssssssssssssso++-      Shell: fish 3.6.2 
+            |        .://+ssssssssssssssssssssssso++:    WM: awesome 
+            |      .:///ossssssssssssssssssssssssso++:   Theme: Arc-Dark [GTK2/3]
+            |    `:////ssssssssssssssssssssssssssso+++.  Icons: kora [GTK2/3] 
+            |  `-////+ssssssssssssssssssssssssssso++++-  Terminal: kitty 
+            |  `..-+oosssssssssssssssssssssssso+++++/`    
+            |    ./++++++++++++++++++++++++++++++/:.     
+            |    `:::::::::::::::::::::::::------``      
+                   
+
+            Type help for a list of commands                       
+  whois: 
+      name: "Mehsen Menem"
+      profession: "Web Developer"
+      location: "Tilburg"
+      email: "mohsen.menem@protonmail.com"
+      description: |
+             Hello, I am a backend web developer who loves working with Linux and have an interest in low level programming. 
+
+  social:
+    ## IF you want to keep them aligned just add spaces
+    - name: "github"
+      url: "          https://github.com/MM-2103"
+    - name: "Masstodon"
+      url: "          https://fosstodon.org/@MM2103"
+
+
+  work:
+    - jobTitle: Webdeveloper 
+      color: gold
+      company: 'Unique Design' 
+      location: Tilburg
+      date: April 2022 - Present
+      description: I got hired by Unique Design after my internship with them ended. I do there all sort of stuff from making Wordpress themes and plugins to managing their Linux servers.
+
+  education:
+   - courseName: School in Syria
+     color: red
+     date: 2008 - 2017
+     #description: 
+
+   - courseName: Schakelcollege Tilburg
+     color: green
+     date: 2017 - 2019
+     description: Schakelcollege was the first school that I had to enter when I first came to the Netherlands so that I could learn Dutch
+   
+   - courseName: ROC Tilburg Stappegoer
+     color: pink
+     date: 2019 - 2021
+     description: VAVO diploma
+
+   - courseName: ROC Tilburg Kasteeldreef
+     color: pink
+     date: 2021 - 2025 Currently doing
+     description: I am currently studying Web Development in ROC Tilburg Kasteeldreef
+
+  skills:
+    - name: HTML/CSS
+      percentage: 90
+      description: I think anyone can say that they can do HTML/CSS, regardless of that I wouldn't say I'am 100% good at it because there is always new stuff that I discover about HTML/CSS. It is pretty incredible how such a simple markup language can offer so many possibilities 
+
+    - name: Javascript/Typescript
+      percentage: 60
+      color: yellow
+      description: Javascript is not my strongest point since I mostly focus on backend, but I have been expirementing latley with NodeJs and Typescript and I am really liking it. So I have been improving my skill at it. But I would still prefer to choose a different language when it come to backend.   
+
+    - name: PHP
+      color: purple
+      percentage: 70
+      description: I usually always go with PHP when i need to write a backend to a web app but lately I have been using different languages just to try new things. I still like PHP and since I do a lot of work with Wordpress I still heavily use it, but there is still some stuff that make me struggle a bit with this language.
+
+    - name: Go
+      color: blue
+      percentage: 60
+      description: I just started learning Golang so I am still quite a novice at it. I really like the language, it is simple but very powerfull. Goroutines offers a lot of possibilties and are strong point of the language. I want to improve my skill at the language so that I can mainly use it in the future to write Web apps.
+
+    - name: C/C++
+      color: grey
+      percentage: 20
+      description: Another language that I just started learning not too long ago. I am mainly focusing on C++. I think everyone programmer should learn C, alot of other programming languages base their syntax of C. Just goes to show you how many stuff did this language get right.
+
+    - name: Linux
+      color: yellow
+      percentage: 90
+      description: I have started wokring with Linux a couple of years ago and now I use it as my main system at home and work. The reasons that I started working with Linux were mainly for better privacy, since Microsoft current business model is selling your data and shoving advertisments in your face. After many years of using Linux I can confidently say that I am proficient at it and very comfortable with it.
+
+  softskills:
+    - name: Work independently
+      #color: red
+      percentage: 90
+      #description:
+
+    - name: Self-Motivated
+      #color: 
+      percentage: 70
+      #description: Description
+    
+    - name: Team-Work
+      percentage: 60
+
+  languages:
+    - name: English
+      color: Blue
+      percentage: 90
+      description: I am confident with my skills in English
+
+    - name: Dutch
+      color: orange
+      percentage: 70
+      description: I have first arrived in the Netherlands in 2017 and since then I have been imporving my Dutch so that I can integrate better with the community. I can easily understand others when they speak Dutch and I can also communicate what I want to say, although I probably would mess up grammar a bit.
+    
+    - name: Arabic
+      percentage: 100
+      description: Native language.
+
+  projects:
+    - title: Krashosting
+      color: red 
+      link: https://portfolio.mehsen.website/posts/krashosting/ 
+      description: This a school group project where we were supposed to make a website for a fictional hosting company
+
+    - title: Linux RAM monitor
+      color: blue
+      #date: since 2016
+      link: https://portfolio.mehsen.website/posts/monitor/
+      description: Just a simple server RAM monitor
+
+    - title: My Github profile
+      # date: Since 2017
+      color: grey
+      link: https://github.com/MM-2103/ https://portfolio.mehsen.website/posts/github/
+      description: If you are interested in more stuff that I worked on, then please check my Gihub. I have there different repos that I frequently update 
+
+        #  certifications:
+    - certName: Example Cert
+      company: Example Certifying Company
+      date: Date of Completion
+      #description: Lorem Ipsum
+  
+  misc: 
+    #commandName: newcommand
+    title: "How to reach out to me!"
+    titleColor: teal
+    content: |
+      Email : mohsen.menem@protonmail.com
+      phone : +31 0649220707
+
+
+      *Note* : Please keep in mind that I am always updating this site so a lot of the content here may change from time to time to keep it up to date with my current knowledge/skills/work/etc...          
