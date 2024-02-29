@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w2.org/1999/xhtml">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html lang="en">
+    <head>
+	<meta name="generator" content="Hugo 0.123.3">
+            <meta charset="utf-8" />
+    <title>terminalCV </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="4s3ti cv terminal format">
+    <meta property="og:title" content="terminalCV" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="//localhost:1313/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
+    <link rel="canonical" href="//localhost:1313/" />    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+    <script data-goatcounter="https://mehsen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/js/jquery.terminal.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/autocomplete_menu.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/css/jquery.terminal.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            width: 100%;
+            font-size: 18px;
+        }
+    </style>
+    
+
+    </head>
+        <body>
+        
+<script> 
+jQuery(document).ready(function($) {
+    var animation = false;
+    var availableCommands = ["all", "whois", 'social', 'work', 'education',
+                    'skills', 'softskills', 'languages',
+                    'projects',
+	             
+                     'startx', 
+                    
+                    "misc",
+                     'source' 
+                    ] 
+
+    $('body').terminal(function(command, term) {
+
+     
+    function whois () {
+        term.echo ("");
+         
+            term.echo ("[[b;grey;]Name:]\t\t\tMehsen Menem");
+            term.echo ("[[b;grey;]Profession:]\t\tWeb Developer");
+            term.echo ("[[b;grey;]Location:]\t\tTilburg");
+            
+                term.echo ("[[b;grey;]Email:]\t\t\tmohsen.menem@protonmail.com");
+            
+            
+            
+                term.echo ("")
+                term.echo ("Hello, I am a backend web developer who loves working with Linux and progamming websites. I am always on the lookout for new technologies that sound interesting to me. I also have an interest in low level programming. \n")
+            
+        
+        term.echo ("");
+      }
+
+    function social () {
+        term.echo("");
+        
+            
+                
+                    term.echo("github:" + "          https:\/\/github.com\/MM-2103");
+                
+                    term.echo("Masstodon:" + "          https:\/\/fosstodon.org\/@MM2103");
+                
+            
+        
+        term.echo("")
+    }
+	    
+    function certifications () {
+        term.echo("");
+        
+    }
+	    
+    function work () {
+        term.echo("");
+        
+            
+                term.echo("[[b;gold;]Webdeveloper]");
+                term.echo("Unique Design");
+                term.echo("Tilburg");
+                term.echo("April 2022 - Present");
+                term.echo ("");
+                term.echo("I got hired by Unique Design after my internship with them ended. I do there all sort of stuff from making Wordpress themes and plugins to managing their Linux servers.");
+                term.echo("-------------------- ");
+                term.echo("");
+            
+        
+    }
+
+    function education () {
+        term.echo("");
+        
+            
+                term.echo("[[b;red;]School in Syria]");
+                term.echo("2008 - 2017");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;green;]Schakelcollege Tilburg]");
+                term.echo("2017 - 2019");
+                
+                    term.echo("Schakelcollege was the first school that I had to enter when I first came to the Netherlands so that I could learn Dutch");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;pink;]ROC Tilburg Stappegoer]");
+                term.echo("2019 - 2021");
+                
+                    term.echo("VAVO diploma");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;pink;]ROC Tilburg Kasteeldreef]");
+                term.echo("2021 - 2025 Currently doing");
+                
+                    term.echo("I am currently studying Web Development in ROC Tilburg Kasteeldreef");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+        
+    }
+
+    function skills () {
+        term.echo(" ");
+        
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]HTML\/CSS:]\n" +
+                        bar_filled + bar_blank + 
+                         90  +"%");
+                
+                    term.echo("I think anyone can say that they can do HTML\/CSS, regardless of that I wouldn\u0027t say I\u0027am 100% good at it because there is always new stuff that I discover about HTML\/CSS. It is pretty incredible how such a simple markup language can offer so many possibilities");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 60  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;yellow;]Javascript\/Typescript:]\n" +
+                        bar_filled + bar_blank + 
+                         60  +"%");
+                
+                    term.echo("Javascript is not my strongest point since I mostly focus on backend, but I have been expirementing latley with NodeJs and Typescript and I am really liking it. So I have been improving my skill at it. But I would still prefer to choose a different language when it come to backend.");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 70  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;purple;]PHP:]\n" +
+                        bar_filled + bar_blank + 
+                         70  +"%");
+                
+                    term.echo("I usually always go with PHP when i need to write a backend to a web app but lately I have been using different languages just to try new things. I still like PHP and since I do a lot of work with Wordpress I still heavly use it, but there is still some stuff that make me struggle a bit with this language.");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 70  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;red;]Laravel:]\n" +
+                        bar_filled + bar_blank + 
+                         70  +"%");
+                
+                    term.echo("Laravel is a great PHP framework, the powerfull CLI the hassle free auth system, the great ecosystem and the huge community. Laravel has it all.");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 60  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;blue;]Go:]\n" +
+                        bar_filled + bar_blank + 
+                         60  +"%");
+                
+                    term.echo("I just started learning Golang so I am still quite a novice at it. I really like the language, it is simple but very powerfull. Goroutines offers a lot of possibilties and are strong point of the language. I want to improve my skill at the language so that I can mainly use it in the future to write Web apps.");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 20  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]C\/C\u002b\u002b:]\n" +
+                        bar_filled + bar_blank + 
+                         20  +"%");
+                
+                    term.echo("Another language that I just started learning not too long ago. I am mainly focusing on C\u002b\u002b. I think everyone programmer should learn C, alot of other programming languages base their syntax of C. Just goes to show you how many stuff did this language get right.");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;yellow;]Linux:]\n" +
+                        bar_filled + bar_blank + 
+                         90  +"%");
+                
+                    term.echo("I have started wokring with Linux a couple of years ago and now I use it as my main system at home and work. The reasons that I started working with Linux were mainly for better privacy, since Microsoft current business model is selling your data and shoving advertisments in your face. After many years of using Linux I can confidently say that I am proficient at it and very comfortable with it.");
+                
+                term.echo ("")
+            
+        
+    }
+    function softskills () {
+        term.echo("");
+        
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Work independently:]\n" +
+                       bar_filled + bar_blank +
+                        90  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 70  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Self-Motivated:]\n" +
+                       bar_filled + bar_blank +
+                        70  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 60  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Team-Work:]\n" +
+                       bar_filled + bar_blank +
+                        60  +"%");
+                
+                term.echo ("")
+            
+        
+    }
+      
+    function languages () {
+        term.echo("");
+        
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;Blue;]English:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  90  +"%");
+                
+                    term.echo("I am confident with my skills in English");
+                
+                term.echo("")
+            
+                var bar_length = Math.round( 70  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;orange;]Dutch:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  70  +"%");
+                
+                    term.echo("I have first arrived in the Netherlands in 2017 and since then I have been imporving my Dutch so that I can integrate better with the community. I can easily understand others when they speak Dutch and I can also communicate what I want to say, although I probably would mess up grammar a bit.");
+                
+                term.echo("")
+            
+                var bar_length = Math.round( 100  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Arabic:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  100  +"%");
+                
+                    term.echo("Native language.");
+                
+                term.echo("")
+            
+        
+    }
+
+    
+    function projects () {
+        term.echo("");
+        
+            
+                term.echo("[[b;red;]Krashosting]");
+                term.echo("")
+                term.echo("https:\/\/portfolio.mehsen.website\/posts\/krashosting\/")
+                
+                    term.echo("This a school group project where we were supposed to make a website for a fictional hosting company");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+                term.echo("[[b;blue;]Linux RAM monitor]");
+                term.echo("")
+                term.echo("https:\/\/portfolio.mehsen.website\/posts\/monitor\/")
+                
+                    term.echo("Just a simple server RAM monitor");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+                term.echo("[[b;grey;]My Github profile]");
+                term.echo("")
+                term.echo("https:\/\/github.com\/MM-2103\/ https:\/\/portfolio.mehsen.website\/posts\/github\/")
+                
+                    term.echo("If you are interested in more stuff that I worked on, then please check my Gihub. I have there different repos that I frequently update");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+        
+    }
+
+    function misc (){
+        term.echo ("")
+        term.echo("[[b;teal;]How to reach me out!]" + "\n")
+        term.echo ("[[;;]Email : mohsen.menem@protonmail.com\nphone : \u002b31 0649220707\n\n\nNote : Please keep in mind that I am always updating this site so a lot of the content here may change from time to time to keep it up to date with my current knowledge\/skills\/work\/etc...          \n]")
+        term.echo ("")
+    }
+
+    function help () {
+        term.echo("\n[[b;white;]Available commands:]\n" +
+                  "\n" + availableCommands.join(' ')+ '\n') 
+    }
+
+      function source() {
+          term.echo("        _______            \n"+
+                    "       |       |           \n"+
+                    "       |       |           \n"+
+                    "       |_______|_______    \n"+
+	                "               |       |   \n"+
+                    "               |       |   \n"+
+                    " ______________|_______|   \n"+
+                    "|      |       |       |   \n"+
+                    "|      |       |       |   \n"+
+                    "|______|_______|_______|   \n"+
+                    "[[;red;]May the source be with you]\n"+
+                    "[[;grey;]https://github.com/4s3ti/terminalcv\n");
+      }
+
+    
+    function progress(percent, width) {
+        var size = Math.round(width*percent/100);
+        var left = '', taken = '', i;
+        for (i=size; i--;) {
+            taken += '=';
+        }
+        if (taken.length > 0) {
+            taken = taken.replace(/=$/, '>');
+        }
+        for (i=width-size; i--;) {
+            left += ' ';
+        }
+        return '[' + taken + left + '] ' + percent + '%';
+    }
+
+    function loading () {
+        var i = 0, size = 30;
+        prompt = term.get_prompt();
+        string = progress(0, size);
+        term.set_prompt(progress);
+        animation = true;
+        (function loop() {
+            string = progress(i++, size);
+            term.set_prompt(string);
+            if (i < 100) {
+                timer = setTimeout(loop, 10);
+            } else {
+                term.echo(progress(i, size) + ' [[b;green;]OK]').set_prompt(prompt);
+                animation = false
+            }
+        })();
+    }
+
+       
+        commands = command.split(/[ ]+/);
+        switch(commands[0]) {
+            case 'whois':
+                whois();
+                break;
+            case 'social':
+                social();
+                break;
+            case 'work':
+                work();
+                break;
+            case 'education':
+                education();
+                break;
+            case 'skills':
+                skills();
+                break;
+            case 'softskills':
+                softskills();
+                break;
+            case 'languages':
+                languages();
+                break;
+            case 'projects':
+                projects();
+                break;
+	    case 'certifications':
+                certifications();
+                break;
+            case 'misc':
+                misc();
+                break;
+            case 'help':
+                help();
+                break;
+            case 'all':
+                whois();
+                social();
+                work();
+                education();
+                skills();
+                softskills();
+                languages();
+                projects();
+		certifications();
+                
+                    misc();
+                
+                
+                    source();
+                
+                break;
+            
+            case 'startx':
+                term.echo("loading ...")
+                loading();
+                setTimeout(function(){window.location = "https:\/\/portfolio.mehsen.website"}, 2000);
+                break;
+            
+            case ':(){:|:&};:':
+            case 'source':
+                source();
+                break;
+            
+            default:
+                term.echo("\nunknown command: " + command + "\n" +
+                          "please type 'help' for a list of available commands\n");
+        }
+    }, {
+        prompt: '[[;grey;]guest@terminal][[;grey;]~\u003e]' + " ",
+        greetings: "[[b;white;]|          ▗▄▄▄       ▗▄▄▄▄    ▄▄▄▖            mm-2103@nixos \n|          ▜███▙       ▜███▙  ▟███▛            ------------- \n|           ▜███▙       ▜███▙▟███▛             OS: NixOS 24.05 \n|            ▜███▙       ▜██████▛               \n|     ▟█████████████████▙ ▜████▛     ▟▙        \n|    ▟███████████████████▙ ▜███▙    ▟██▙        \n|           ▄▄▄▄▖           ▜███▙  ▟███▛       Packages: 1862 (nix-system), 29 (nix \n|          ▟███▛             ▜██▛ ▟███▛        Shell: bash 5.2.26 \n|▟███████████▛                  ▟██████████▙   WM: awesome \n|▜██████████▛                  ▟███████████▛   Theme: Arc-Dark [GTK2\/3] \n|      ▟███▛ ▟▙               ▟███▛            Icons: kora [GTK2\/3] \n|     ▟███▛ ▟██▙             ▟███▛             Terminal: kitty \n|    ▟███▛  ▜███▙           ▝▀▀▀▀              Terminal Font: FiraCode Nerd Font 11 \n|    ▜██▛    ▜███▙ ▜██████████████████▛         \n|     ▜▛     ▟████▙ ▜████████████████▛          \n|           ▟██████▙       ▜███▙                 \n|          ▟███▛▜███▙       ▜███▙              \n|         ▟███▛  ▜███▙       ▜███▙\n|         ▝▀▀▀    ▀▀▀▀▘       ▀▀▀▘                                     \n|                                                                            \n\nType help for a list of commands                       \n]",
+        keydown: function(e, term) {
+            if (animation) {
+                if (e.which == 68 && e.ctrlKey) { 
+                    clearTimeout(timer);
+                    animation = false;
+                    term.echo(string + ' [[b;red;]FAIL]')
+                    .set_prompt(prompt);
+                }
+                return false;
+            }
+        },
+        autocompleteMenu: true,
+        completion: availableCommands
+        
+    });
+});
+</script>
+
+        </body>
+</html>
